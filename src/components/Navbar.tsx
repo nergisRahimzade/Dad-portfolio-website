@@ -28,7 +28,7 @@ export default function Navbar() {
         position="fixed"
         elevation={scrolled ? 2 : 0}
         sx={{
-          bgcolor: scrolled ? "rgba(255,255,255,0.95)" : "transparent",
+          bgcolor: scrolled ? "rgba(10,22,40,0.95)" : "transparent",
           backdropFilter: scrolled ? "blur(16px)" : "none",
           borderBottom: scrolled ? `1px solid ${theme.palette.divider}` : "none",
           transition: "all 0.3s ease",

@@ -76,7 +76,7 @@ export default function Experience() {
                 sx={{
                   flex: 1, mb: 4, borderRadius: 4,
                   transition: "all 0.25s ease",
-                  "&:hover": { borderColor: "primary.light", boxShadow: "0 8px 32px rgba(124,58,237,0.07)" },
+                  "&:hover": { borderColor: "primary.light", boxShadow: "0 8px 32px rgba(56,189,248,0.1)" },
                 }}
               >
                 <CardContent sx={{ p: { xs: 3, md: 4 } }}>
@@ -134,7 +134,7 @@ export default function Experience() {
             variant="contained"
             size="large"
             startIcon={<DownloadIcon />}
-            sx={{ px: 4, py: 1.5, fontWeight: 700, boxShadow: "0 4px 20px rgba(124,58,237,0.3)", "&:hover": { transform: "translateY(-2px)" }, transition: "all 0.2s" }}
+            sx={{ px: 4, py: 1.5, fontWeight: 700, boxShadow: "0 4px 20px rgba(56,189,248,0.3)", "&:hover": { transform: "translateY(-2px)" }, transition: "all 0.2s" }}
           >
             Download Full CV
           </Button>

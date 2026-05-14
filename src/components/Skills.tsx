@@ -1,13 +1,21 @@
 import { Box, Card, CardContent, Chip, Container, Grid, Stack, Typography } from "@mui/material"
+import CodeIcon from "@mui/icons-material/Code"
+import WebIcon from "@mui/icons-material/Web"
+import StorageIcon from "@mui/icons-material/Storage"
+import DataObjectIcon from "@mui/icons-material/DataObject"
+import CloudIcon from "@mui/icons-material/Cloud"
+import AccountTreeIcon from "@mui/icons-material/AccountTree"
+import GroupsIcon from "@mui/icons-material/Groups"
+import type { SvgIconComponent } from "@mui/icons-material"
 
-const skillSections = [
-  { icon: "??", title: "Backend Technologies", items: ["C#", ".NET Core / Standard", "ASP.NET Web API", "MVC", "Web Forms", "WinForms", "REST / gRPC"] },
-  { icon: "???", title: "Frontend Technologies", items: ["Angular (v16)", "TypeScript / JavaScript", "jQuery", "AngularJS", "KnockoutJS", "HTML / CSS"] },
-  { icon: "???", title: "Databases", items: ["SQL Server (T-SQL)", "Stored Procedures", "Oracle", "PostgreSQL", "MongoDB", "Redis"] },
-  { icon: "??", title: "Data Access", items: ["Entity Framework Core", "ADO.NET", "LINQ", "T-SQL"] },
-  { icon: "??", title: "Cloud & DevOps", items: ["Azure", "Docker", "RabbitMQ", "Kafka", "Azure Service Bus", "CI/CD", "Azure DevOps", "Git"] },
-  { icon: "???", title: "Software Design", items: ["SOLID Principles", "OOP", "Design Patterns", "Domain-Driven Design", "TDD", "Microservices"] },
-  { icon: "??", title: "Methodologies", items: ["Agile (Scrum / Kanban)", "Waterfall", "SDLC", "Mentorship", "Code Reviews", "Technical Documentation"] },
+const skillSections: { Icon: SvgIconComponent; title: string; items: string[] }[] = [
+  { Icon: CodeIcon, title: "Backend Technologies", items: ["C#", ".NET Core / Standard", "ASP.NET Web API", "MVC", "Web Forms", "WinForms", "REST / gRPC"] },
+  { Icon: WebIcon, title: "Frontend Technologies", items: ["Angular (v16)", "TypeScript / JavaScript", "jQuery", "AngularJS", "KnockoutJS", "HTML / CSS"] },
+  { Icon: StorageIcon, title: "Databases", items: ["SQL Server (T-SQL)", "Stored Procedures", "Oracle", "PostgreSQL", "MongoDB", "Redis"] },
+  { Icon: DataObjectIcon, title: "Data Access", items: ["Entity Framework Core", "ADO.NET", "LINQ", "T-SQL"] },
+  { Icon: CloudIcon, title: "Cloud & DevOps", items: ["Azure", "Docker", "RabbitMQ", "Kafka", "Azure Service Bus", "CI/CD", "Azure DevOps", "Git"] },
+  { Icon: AccountTreeIcon, title: "Software Design", items: ["SOLID Principles", "OOP", "Design Patterns", "Domain-Driven Design", "TDD", "Microservices"] },
+  { Icon: GroupsIcon, title: "Methodologies", items: ["Agile (Scrum / Kanban)", "Waterfall", "SDLC", "Mentorship", "Code Reviews", "Technical Documentation"] },
 ]
 
 export default function Skills() {
@@ -40,14 +48,14 @@ export default function Skills() {
                   height: "100%",
                   borderRadius: 4,
                   transition: "all 0.25s ease",
-                  "&:hover": { borderColor: "primary.main", boxShadow: "0 8px 32px rgba(124,58,237,0.08)", transform: "translateY(-3px)" },
+                  "&:hover": { borderColor: "primary.main", boxShadow: "0 8px 32px rgba(56,189,248,0.12)", transform: "translateY(-3px)" },
                 }}
               >
                 <CardContent sx={{ p: 3.5 }}>
                   <Stack direction="row" spacing={1.5} sx={{ alignItems: "center", mb: 2.5 }}>
-                    <Typography sx={{ fontSize: "1.4rem", lineHeight: 1 }} aria-hidden="true">
-                      {section.icon}
-                    </Typography>
+                    <Box sx={{ color: "primary.main", display: "flex", alignItems: "center" }}>
+                      <section.Icon fontSize="small" />
+                    </Box>
                     <Typography variant="h6" sx={{ fontSize: "1rem", fontWeight: 600, color: "text.primary" }}>
                       {section.title}
                     </Typography>
@@ -59,9 +67,9 @@ export default function Skills() {
                         label={item}
                         size="small"
                         sx={{
-                          bgcolor: "rgba(124,58,237,0.08)",
+                          bgcolor: "rgba(56,189,248,0.08)",
                           color: "primary.main",
-                          border: "1px solid rgba(124,58,237,0.18)",
+                          border: "1px solid rgba(56,189,248,0.18)",
                           fontSize: "0.78rem",
                           fontWeight: 500,
                         }}

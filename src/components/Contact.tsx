@@ -38,7 +38,7 @@ export default function Contact() {
                 sx={{
                   borderRadius: 3,
                   transition: "all 0.2s ease",
-                  "&:hover": { borderColor: "primary.main", boxShadow: "0 4px 20px rgba(124,58,237,0.1)", transform: "translateX(4px)" },
+                  "&:hover": { borderColor: "primary.main", boxShadow: "0 4px 20px rgba(56,189,248,0.15)", transform: "translateX(4px)" },
                 }}
               >
                 <CardActionArea component="a" href={href} target="_blank" rel="noopener noreferrer" sx={{ p: 0 }}>
@@ -47,8 +47,8 @@ export default function Contact() {
                       <Box
                         sx={{
                           width: 44, height: 44, flexShrink: 0,
-                          bgcolor: "rgba(124,58,237,0.08)",
-                          border: "1px solid rgba(124,58,237,0.2)",
+                          bgcolor: "rgba(56,189,248,0.08)",
+                          border: "1px solid rgba(56,189,248,0.2)",
                           borderRadius: 2.5,
                           display: "flex", alignItems: "center", justifyContent: "center",
                           color: "primary.main",
@@ -82,7 +82,7 @@ export default function Contact() {
             variant="contained"
             size="large"
             startIcon={<DownloadIcon />}
-            sx={{ px: 5, py: 1.75, fontWeight: 700, fontSize: "1rem", boxShadow: "0 4px 20px rgba(124,58,237,0.3)", "&:hover": { transform: "translateY(-2px)" }, transition: "all 0.2s" }}
+            sx={{ px: 5, py: 1.75, fontWeight: 700, fontSize: "1rem", boxShadow: "0 4px 20px rgba(56,189,248,0.3)", "&:hover": { transform: "translateY(-2px)" }, transition: "all 0.2s" }}
           >
             Download Resume
           </Button>

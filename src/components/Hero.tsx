@@ -23,7 +23,7 @@ export default function Hero() {
           position: "absolute",
           top: -200, right: -200,
           width: 700, height: 700,
-          background: "radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 65%)",
+          background: "radial-gradient(circle, rgba(56,189,248,0.07) 0%, transparent 65%)",
           pointerEvents: "none",
         },
       }}
@@ -57,7 +57,7 @@ export default function Hero() {
                   animation: "pulse 2s ease-in-out infinite",
                 }}
               />
-              <Typography sx={{ fontSize: "0.82rem", fontWeight: 600, color: "#059669" }}>
+              <Typography sx={{ fontSize: "0.82rem", fontWeight: 600, color: "secondary.main" }}>
                 Available for new opportunities
               </Typography>
             </Box>
@@ -111,8 +111,8 @@ export default function Hero() {
                   bgcolor: "primary.main",
                   px: 4, py: 1.5,
                   fontWeight: 700,
-                  boxShadow: "0 4px 20px rgba(124,58,237,0.35)",
-                  "&:hover": { bgcolor: "primary.dark", boxShadow: "0 6px 28px rgba(124,58,237,0.5)", transform: "translateY(-2px)" },
+                  boxShadow: "0 4px 20px rgba(56,189,248,0.35)",
+                  "&:hover": { bgcolor: "primary.dark", boxShadow: "0 6px 28px rgba(56,189,248,0.5)", transform: "translateY(-2px)" },
                   transition: "all 0.2s ease",
                 }}
               >
@@ -142,9 +142,9 @@ export default function Hero() {
                   label={tag}
                   size="small"
                   sx={{
-                    bgcolor: "rgba(124,58,237,0.08)",
+                    bgcolor: "rgba(56,189,248,0.08)",
                     color: "primary.main",
-                    border: "1px solid rgba(124,58,237,0.2)",
+                    border: "1px solid rgba(56,189,248,0.2)",
                     fontFamily: "monospace",
                     fontSize: "0.78rem",
                     fontWeight: 500,
@@ -159,7 +159,7 @@ export default function Hero() {
             <Box
               sx={{
                 position: "absolute", inset: -24,
-                background: "radial-gradient(circle at center, rgba(124,58,237,0.15) 0%, transparent 70%)",
+                background: "radial-gradient(circle at center, rgba(56,189,248,0.15) 0%, transparent 70%)",
                 borderRadius: "50%", pointerEvents: "none",
               }}
             />
@@ -176,7 +176,7 @@ export default function Hero() {
                 display: "block",
                 position: "relative",
                 zIndex: 1,
-                boxShadow: "0 0 0 1px rgba(124,58,237,0.15), 0 20px 60px rgba(0,0,0,0.12), 0 0 80px rgba(124,58,237,0.12)",
+                boxShadow: "0 0 0 1px rgba(56,189,248,0.15), 0 20px 60px rgba(0,0,0,0.25), 0 0 80px rgba(56,189,248,0.12)",
               }}
             />
           </Box>

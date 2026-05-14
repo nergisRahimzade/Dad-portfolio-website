@@ -2,23 +2,24 @@ import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
-      main: '#7C3AED',
-      light: '#A78BFA',
-      dark: '#5B21B6',
+      main: '#38BDF8',
+      light: '#7DD3FC',
+      dark: '#0EA5E9',
     },
     secondary: {
-      main: '#10B981',
+      main: '#4ADE80',
     },
     background: {
-      default: '#FFFFFF',
-      paper: '#F9F8FF',
+      default: '#0A1628',
+      paper: '#0D1F35',
     },
     text: {
-      primary: '#1E1B2E',
-      secondary: '#6B7280',
+      primary: '#F1F5F9',
+      secondary: '#94A3B8',
     },
+    divider: 'rgba(255,255,255,0.08)',
   },
   typography: {
     fontFamily: "'Inter', system-ui, sans-serif",

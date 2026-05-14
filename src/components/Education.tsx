@@ -53,7 +53,7 @@ export default function Education() {
               sx={{
                 borderRadius: 4,
                 transition: "all 0.25s ease",
-                "&:hover": { borderColor: "primary.light", boxShadow: "0 8px 32px rgba(124,58,237,0.07)" },
+                "&:hover": { borderColor: "primary.light", boxShadow: "0 8px 32px rgba(56,189,248,0.1)" },
               }}
             >
               <CardContent sx={{ p: { xs: 3, md: 4 } }}>
@@ -62,8 +62,8 @@ export default function Education() {
                   <Box
                     sx={{
                       width: 52, height: 52, flexShrink: 0,
-                      bgcolor: "rgba(124,58,237,0.08)",
-                      border: "1px solid rgba(124,58,237,0.2)",
+                      bgcolor: "rgba(56,189,248,0.08)",
+                      border: "1px solid rgba(56,189,248,0.2)",
                       borderRadius: 3,
                       display: "flex", alignItems: "center", justifyContent: "center",
                       color: "primary.main",
@@ -95,7 +95,7 @@ export default function Education() {
                           sx={
                             edu.status === "In Progress"
                               ? { bgcolor: "rgba(16,185,129,0.1)", color: "#059669", border: "1px solid rgba(16,185,129,0.25)", fontSize: "0.75rem", fontWeight: 600 }
-                              : { bgcolor: "rgba(124,58,237,0.08)", color: "primary.main", border: "1px solid rgba(124,58,237,0.2)", fontSize: "0.75rem", fontWeight: 600 }
+                              : { bgcolor: "rgba(56,189,248,0.08)", color: "primary.main", border: "1px solid rgba(56,189,248,0.2)", fontSize: "0.75rem", fontWeight: 600 }
                           }
                         />
                       </Box>
@@ -122,8 +122,8 @@ export default function Education() {
                   key={cert}
                   sx={{
                     display: "flex", flexDirection: "row", alignItems: "center", gap: 1,
-                    bgcolor: "rgba(124,58,237,0.08)",
-                    border: "1px solid rgba(124,58,237,0.18)",
+                    bgcolor: "rgba(56,189,248,0.08)",
+                    border: "1px solid rgba(56,189,248,0.18)",
                     borderRadius: 2,
                     px: 2, py: 1,
                   }}
